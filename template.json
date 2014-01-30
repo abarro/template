@@ -1,0 +1,29 @@
+{
+  "name" : "Escritórios",
+  "version" : "1.0",
+  "description" : "Esse modelo é ideal para escritórios de profissionais liberais e autônomos. Aproveite o destaque para colocar uma frase chamativa",
+  "created_at" : "31/07/2013",
+  "updated_at" : "31/07/2013",
+  "colors" : "Discretas",
+  "design" : "Moderno",
+  "thumb_size" : [283, 132],
+  "default_color_scheme" : "color1.css",
+  "color_schemes" : [
+    {
+      "name" : "color1",
+      "colors" : ["#ebebeb", "#ffffff", "#000000"]
+    },
+    {
+      "name" : "color2",
+      "colors" : ["#ebebe3", "#ffffff", "#f1b53b"]
+    },
+    {
+      "name" : "color3",
+      "colors" : ["#171717", "#1f1f1f", "#262626"]
+    },
+    {
+      "name" : "color4",
+      "colors" : ["#ffeb66", "#ffffff", "#15212d"]
+    }
+  ]
+}

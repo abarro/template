@@ -1,0 +1,33 @@
+{{=<% %>=}}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%> meta/head %>
+		<%> meta/css %>
+	</head>
+	<body id="{{namespace}}" style="margin:0;">
+		
+		<%> commons/header %>
+		
+		<%#home?%>
+			<%> pages/home %>
+		<%/home?%>
+
+		<%#sobre?%>
+			<%> pages/sobre %>
+		<%/sobre?%>
+		
+		<%#galeria?%>
+			<%> pages/galeria %>
+		<%/galeria?%>
+	
+		<%#contato?%>
+			<%> pages/contato %>
+		<%/contato?%>
+		
+		<%> commons/footer %>
+		<%> meta/js %>
+
+	</body>
+</html>

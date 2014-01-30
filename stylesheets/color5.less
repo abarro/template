@@ -1,0 +1,120 @@
+@header: #ebebeb;
+@bg: #ffffff;
+@text: #34302D;
+@heading: #ffffff;
+@logo: #ffffff;
+@logo-color: #34302D;
+@button: #0f0f0f;
+@button-color: #1195BE;
+@line: #0f0f0f;
+@bdb-link: #0f0f0f;
+@link-hover: #cacaca;
+@off-canvas: #e0e0e0;
+@off-canvas-line: #cbcbcb;
+@off-canvas-shadow: #c7c7c7;
+
+.btn(@bg: @button, @color: @button-color, @hover: @link-hover, @hover-color: @bg){
+  background-color: @bg;
+  color: @color;
+  &:hover{
+    background-color: @hover;
+    color: @hover-color;
+  }
+}
+
+@media (max-width: 800px){
+  @import "mobile.less";
+}
+
+@media (min-width: 801px){
+  @import "badabum.less";
+}
+
+
+a {
+  font-weight: bold;
+  color: @text;
+}
+
+input, textarea {
+  color: @text;
+}
+
+h2, h2 a{
+  color: @heading;
+}
+
+h3, h4, h3 a, h4 a {
+  color: @heading;
+}
+
+header{
+  background-color: @header;
+  .logo{
+    .logo-container{
+        background: url(../images/arrow-color1.png) no-repeat;
+    }
+    h1 {
+      a {
+        color: @logo-color;
+      }
+      &:after{
+        border-color: @logo transparent transparent transparent;
+      }
+    }
+  }
+}
+
+.bdbAdv-button a, button{
+  .btn();
+}
+
+nav ul li a, nav ul li a:visited{
+  color: @bdb-link;
+  &.active, &:hover, &:active{
+    border-bottom-color: @bdb-link;
+  }
+}
+
+#intro{
+  background-color: @header;
+  h2, h5, h2 a, h5 a{
+    color: @heading;
+  }
+}
+
+footer{
+  hr{
+    background-color: @line;
+  }
+  .logo{
+    .logo-container{
+      background: url(../images/arrow-color1.png) no-repeat;
+      height: 58px;
+      width: 67px;
+      background-size: 67px 58px;
+    }
+    h1 {
+      a {
+        color: @logo-color;
+      }
+      &:after{
+        border-color: @logo transparent transparent transparent;
+      }
+    }
+  }
+}
+
+.highlight{
+  background-color: @header;
+}
+
+#off-canvas{
+  background-color: @off-canvas;
+  box-shadow: inset -5px -5px 10px @off-canvas-shadow;
+  ul{
+    li{
+      border-bottom: 1px solid @off-canvas-line;
+    }
+  }
+}

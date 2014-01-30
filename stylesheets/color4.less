@@ -1,0 +1,142 @@
+@header: #ffeb66;
+@header-text: #14202c;
+@bg: #ffffff;
+@text: #6b6b6b;
+@heading: #13212c;
+@logo: #15212d;
+@logo-color: #ffffff;
+@button: #15212d;
+@button-color: #ffffff;
+@line: #14202c;
+@bdb-link: #16202a;
+@link-hover: #000000;
+@highlight: #ffeb66;
+@highlight-text: #14222b;
+@off-canvas: #fff7c0;
+@off-canvas-line: #e7e1af;
+@off-canvas-shadow: #f9f2bb;
+
+.btn(@bg: @button, @color: @button-color, @hover: @highlight, @hover-color: @highlight-text){
+  background-color: @bg;
+  color: @color;
+  &:hover{
+    background-color: @hover;
+    color: @hover-color;
+  }
+}
+
+@media (max-width: 800px){
+  @import "mobile.less";
+}
+
+@media (min-width: 801px){
+  @import "badabum.less";
+}
+
+
+#bdb-body{
+  background-color: @bg;
+  color: @text;
+}
+
+input, textarea {
+  color: @text;
+}
+
+h2, h2 a{
+  color: @heading;
+}
+
+h3, h4, h3 a, h4 a {
+  color: @heading;
+}
+
+a {
+  font-weight: bold;
+  color: @text;
+}
+
+header{
+  background-color: @header;
+  nav ul li a, nav ul li a:visited{
+    color: @bdb-link;
+    &.active, &:hover, &:active{
+      border-bottom-color: @bdb-link;
+    }
+  }
+  .logo{
+    .logo-container{
+      background: url(../images/arrow-color4.png) no-repeat;
+    }
+    h1 {
+      a {
+        color: @logo-color;
+      }
+      &:after{
+        border-color: @logo transparent transparent transparent;
+      }
+    }
+  }
+}
+
+#intro{
+  background-color: @header;
+  color: @header-text;
+  h2, h5, h2 a, h5 a{
+    color: @heading;
+  }
+}
+
+footer{
+  hr{
+    background-color: @line;
+  }
+  .logo{
+    .logo-container{
+      background: url(../images/arrow-color4.png) no-repeat;
+      height: 58px;
+      width: 67px;
+      background-size: 67px 58px;
+    }
+    h1 {
+      a {
+        color: @logo-color;
+      }
+      &:after{
+        border-color: @logo transparent transparent transparent;
+      }
+    }
+  }
+}
+
+.highlight{
+  background-color: @highlight;
+  color: @highlight-text;
+  a {
+    color: @highlight-text;
+  }
+  a.bdbAdv-button{
+    color: @highlight;
+  }
+  h3, h3 a{
+    color: @highlight-text;
+  }
+}
+
+.bdbAdv-button a, button{
+  .btn();
+}
+
+.menu{
+  color: @header-text;
+}
+
+#off-canvas{
+  background-color: @off-canvas;
+  box-shadow: inset -5px -5px 10px @off-canvas-shadow;
+  ul{
+    li{
+      border-bottom: 1px solid @off-canvas-line;
+    }
+  }
+}

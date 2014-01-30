@@ -1,0 +1,142 @@
+@header: #171717;
+@header-text: #8f8f8f;
+@bg: #1f1f1f;
+@text: #6b6b6b;
+@heading: #c8b974;
+@logo: #262626;
+@logo-color: #c8b978;
+@button: #c9ba79;
+@button-color: #171719;
+@line: #262626;
+@bdb-link: #8e8e8e;
+@link-hover: #ffffff;
+@highlight: #171717;
+@highlight-text: #8d8d8d;
+@off-canvas: #262626;
+@off-canvas-line: #313131;
+@off-canvas-shadow: #222222;
+
+.btn(@bg: @button, @color: @button-color, @hover: @link-hover, @hover-color: @bg){
+  background-color: @bg;
+    a {
+    color: @button-color;
+  }
+  color: @color;
+  &:hover{
+    background-color: @hover;
+    color: @hover-color;
+  }
+}
+
+@media (max-width: 800px){
+  @import "mobile.less";
+}
+
+@media (min-width: 801px){
+  @import "badabum.less";
+}
+
+#bdb-body{
+  background-color: @bg;
+  color: @text;
+}
+
+input, textarea {
+  color: @text;
+}
+
+h2, h2 a{
+  color: @heading;
+}
+
+h3, h4, h3 a, h4 a {
+  color: @heading;
+}
+
+a {
+  font-weight: bold;
+  color: @text;
+}
+
+header{
+  background-color: @header;
+  nav ul li a, nav ul li a:visited{
+    color: @bdb-link;
+    &.active, &:hover, &:active{
+      border-bottom-color: @bdb-link;
+    }
+  }
+  .logo{
+    .logo-container{
+      background: url(../images/arrow-color3.png) no-repeat;
+    }
+    h1 {
+      a {
+        color: @logo-color;
+      }
+      &:after{
+        border-color: @logo transparent transparent transparent;
+      }
+    }
+  }
+}
+
+.bdbAdv-button a, button{
+  .btn();
+}
+
+#intro{
+  background-color: @header;
+  color: @header-text;
+  h2, h5, h2 a, h5 a{
+    color: @heading;
+  }
+}
+
+footer{
+  hr{
+    background-color: @line;
+  }
+  .logo{
+    .logo-container{
+      background: url(../images/arrow-color3.png) no-repeat;
+      height: 58px;
+      width: 67px;
+      background-size: 67px 58px;
+    }
+    h1 {
+      a {
+        color: @logo-color;
+      }
+      &:after{
+        border-color: @logo transparent transparent transparent;
+      }
+    }
+  }
+}
+
+.highlight{
+  background-color: @highlight;
+  color: @highlight-text;
+  color: @highlight-text;
+  a {
+    color: @highlight-text;
+  }
+  h3, h3 a{
+    color: @highlight-text;
+  }
+}
+
+.menu{
+  color: @header-text;
+}
+
+#off-canvas{
+  background-color: @off-canvas;
+  box-shadow: inset -5px -5px 10px @off-canvas-shadow;
+  ul{
+    li{
+      border-bottom: 1px solid @off-canvas-line;
+    }
+  }
+}
