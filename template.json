@@ -8,10 +8,14 @@
   "design" : "Moderno",
   "thumb_size" : [246, 115],
   "gallery_images_per_page": 30,
-  "default_color_scheme" : "normal.css",
+  "default_color_scheme" : "blue.css",
   "color_schemes" : [
     {
-      "name" : "normal",
+      "name" : "blue",
+      "colors" : ["#ffffff", "#ececec", "#797979"]
+    },
+    {
+      "name" : "red",
       "colors" : ["#ffffff", "#ececec", "#797979"]
     }
   ]
