@@ -1,8 +1,18 @@
 @import "neat/neat-helpers"; // or "neat-helpers" when in Rails
 
-$visual-grid: true;
+// Change the grid settings
 
-// Device specific breakpoints
-$tablet: new-breakpoint(max-width 1022px 10);
-$wide-mobile: new-breakpoint(max-width 480px 4);
-$mobile: new-breakpoint(max-width 320px 4);
+$visual-grid: true !default; // Display the base grid
+$visual-grid-color: #333 !default;
+$visual-grid-index: front !default; // Show grid behind content (back) or overlay it over the content (front)
+$visual-grid-opacity: 0.4 !default;
+$visual-grid-breakpoints: () !default;
+
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 10;
+$max-width: em(1088);
+
+// Define your breakpoints
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);

@@ -1,0 +1,13 @@
+#wrapper {
+  @include media($tablet) {
+    min-width: 940px;
+  }
+
+  @include media($wide-mobile) {
+    min-width: 0;
+  }
+
+  @include media($mobile) {
+    min-width: 0;
+  }
+}

@@ -1,0 +1,97 @@
+#header-contact {
+  position: relative;
+  height: 500px;
+
+  .content {
+    padding: 80px 0 60px 0;
+  }
+
+  article {
+    position: relative;
+    margin-bottom: 20px;
+
+    p:first-child {
+      font-weight: bold;
+      color: $highlight;
+    }
+  }
+
+  .contact-info {
+    @include span-columns(4);
+    z-index: 10;
+  }
+
+  .map {
+    /*width: 850px;*/
+    width: 670px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  #map-canvas iframe {
+    height: 450px;
+  }
+
+  h2 {
+    color: $highlight;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $foreground;
+  }
+}
+
+#contact {
+  @include outer-container;
+  padding: 30px 0 60px 0;
+
+  article.form {
+    @include span-columns(8);
+    @include shift(4);
+  }
+
+  h3 {
+    color: $highlight;
+    margin-bottom: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+    background: $lighter-background;
+    color: $foreground;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    @include placeholder {
+      color: $foreground * 1.5;
+    }
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  button {
+    background: $inverse-background;
+    padding: 15px 60px;
+    color: $inverse-foreground;
+    cursor: pointer;
+
+    &:hover {
+      background: $inverse-background * 1.2;
+    }
+
+    &:active {
+      margin-top: 2px;
+      margin-bottom: -2px;
+    }
+  }
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}

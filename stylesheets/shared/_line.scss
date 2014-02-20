@@ -1,0 +1,10 @@
+figure.line {
+  background: url('../images/line-#{$color-scheme}.jpg') no-repeat;
+  width: 60px;
+  height: 2px;
+  margin-bottom: 30px;
+}
+
+figure.small {
+  height: 1px;
+}

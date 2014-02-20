@@ -1,0 +1,36 @@
+#header {
+  min-height: 500px;
+  overflow-x: hidden;
+
+  .header-img {
+    @include span-columns(3);
+    position: relative;
+  }
+
+  article {
+    @include span-columns(7);
+    position: relative;
+    z-index: 10;
+    margin-top: 100px;
+  }
+
+  .header-banner {
+    width: 700px;
+    height: 500px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -80px;
+    z-index: 0;
+  }
+
+  h2 {
+    color: $highlight;
+    margin-bottom: 20px;
+    font-size: 79px;
+  }
+
+  p {
+    color: $foreground;
+  }
+}

@@ -1,0 +1,14 @@
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+
+  h1, a {
+    color: $inverse-foreground;
+    text-decoration: none;
+  }
+
+  img {
+    /*width: 100%;*/
+    max-height: 120px;
+  }
+}

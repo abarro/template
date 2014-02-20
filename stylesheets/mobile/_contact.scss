@@ -1,0 +1,32 @@
+@include media($tablet) {
+  #header-contact .content, #contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #header-contact .map {
+    width: 650px;
+  }
+}
+
+@include media($wide-mobile) {
+  #header-contact {
+    height: 300px;
+    @include span-columns(4);
+  }
+
+  #header-contact .map iframe {
+    height: 300px !important;
+  }
+
+   #header-contact .contact-info {
+     display: none;
+  }
+
+  #contact article {
+    @include span-columns (4);
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 20px;
+  }
+}

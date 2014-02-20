@@ -1,0 +1,69 @@
+@include media($tablet) {
+  #header .content, #home .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@include media($wide-mobile) {
+  #header {
+    position: relative;
+    height: auto;
+
+    .header-img {
+      @include span-columns(4);
+      position: static;
+    }
+
+    .header-banner {
+      height: 300px;
+    }
+
+    article {
+      @include span-columns(4);
+      margin-top: 350px;
+      margin-bottom: 30px;
+
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+
+  #home {
+    padding-top: 0;
+  }
+
+  #home .presentation {
+    margin-bottom: 30px;
+    figure.presentation-img {
+      display: none;
+    }
+
+    footer {
+      @include span-columns(4);
+      margin-top: 30px;
+    }
+  }
+
+  #home .presentation-1, #home .presentation-2 {
+    @include span-columns(4);
+  }
+
+  #home .presentation-1 {
+    margin-bottom: 60px;
+
+    figure, footer {
+      @include span-columns(4 of 4);
+    }
+
+    figure {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    figure.line {
+      display: none;
+    }
+  }
+}

@@ -1,9 +1,13 @@
 {
   "title": "Discovery",
-  "company_logo": "Seu Logo Aqui",
+  "company_brand": "Footer Title",
+  "company_logo": "Header Name",
 
   "menu_home": "Home",
   "menu_about": "Quem Somos",
   "menu_gallery": "Galeria de Fotos",
-  "menu_contact": "Contato"
+  "menu_contact": "Contato",
+
+  "image-test_500_500": "images/img-500_500.jpg"
+
 }

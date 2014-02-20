@@ -1,0 +1,32 @@
+@include media($tablet) {
+  #gallery .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@include media($wide-mobile) {
+  #gallery {
+    h2 {
+      font-size: 50px;
+    }
+
+    ul {
+      @include span-columns(4);
+    }
+
+    li {
+      @include omega-reset(3n);
+      @include span-columns(2 of 4);
+      @include omega(2n);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h3, p {
+      display: none;
+    }
+  }
+}

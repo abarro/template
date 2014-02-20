@@ -1,31 +1,41 @@
 // Manter esta Ordem de importação
-@import 'commons/template';
+$padding: 1em;
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 
 /* -- Tipografia --  */
-body, p, a {font-family: $helvetica}
+body {background: red;}
+#wrapper {
+	font-family: $helvetica;
+	border:1px solid black;
+	@include outer-container;
+
+}
 
 /* -- html -- */
 
 /* -- body -- */
 
-body
-{
-}
-
 /* -- Header -- */
 
 header {
-	height: 300px;
-	background-color: #fcfcfc;
-	@include outer-container;
-}
-header h1{
-		
-		@include span-columns(12);
-		}
+	height: 100px;
 	
-	/* -- Menu Navegação -- */
-	nav {
+	
+}
+header h1, footer h3{
+	@include span-columns(4);
+}
+/* -- Menu Navegação -- */
+
+nav {
 	
 	}
 		nav ul {
@@ -39,10 +49,42 @@ header h1{
 
 /* -- Footer -- */
 footer {
+	background-color: #f3f3f3;
 	height:200px;
-	background-color: #fcfcfc;
+	
+	clear: both;
+}
+/* -- home -- */
+#home-featured{
+	background-color: #f3f3f3;
 	@include outer-container;
+}
+#home-featured figure{
+	@include span-columns(4);	
+	margin:0;
+}
+#home-featured h1{
+	@include span-columns(6);	
+}
+
+#spotlights{
 
 }
+.spotlight {
+	background-color: #f3f3f3;
+	@include span-columns(2, block);	
+}
+.spotlight {
+
+}
+
+figure{
+	//margin:0;
+}
+
+figure img {
+	width: 100%;
+}
+
 
 

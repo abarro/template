@@ -1,0 +1,49 @@
+#top-bar {
+  background: $inverse-background;
+  padding: 40px 0;
+
+  .site-name {
+    @include span-columns(4);
+  }
+
+  ul {
+    @include span-columns(8);
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 50px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      color: $inverse-foreground;
+      font-size: 15px;
+      position: relative;
+      font-weight: bold;
+      text-decoration:none;
+    }
+
+    a:after {
+      content: "";
+      background: url('../images/hover-line.jpg') no-repeat;
+      width: 1px;
+      height: 26px;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      display: none;
+    }
+
+    a:hover:after, a:active:after {
+      display: block;
+    }
+  }
+
+  .button-menu {
+    display: none;
+  }
+}

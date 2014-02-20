@@ -1,0 +1,22 @@
+@include media($tablet) {
+  #footer .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@include media($wide-mobile) {
+  #footer {
+    padding: 40px 0;
+
+    .site-name {
+      @include span-columns(4);
+      margin-bottom: 40px;
+    }
+
+    article {
+      @include span-columns(4);
+      margin-bottom: 20px;
+    }
+  }
+}
