@@ -1,0 +1,48 @@
+// Manter esta Ordem de importação
+@import 'commons/template';
+
+/* -- Tipografia --  */
+body, p, a {font-family: $helvetica}
+
+/* -- html -- */
+
+/* -- body -- */
+
+body
+{
+}
+
+/* -- Header -- */
+
+header {
+	height: 300px;
+	background-color: #fcfcfc;
+	@include outer-container;
+}
+header h1{
+		
+		@include span-columns(12);
+		}
+	
+	/* -- Menu Navegação -- */
+	nav {
+	
+	}
+		nav ul {
+			margin: 0;
+			padding: 0;
+
+		}
+			nav li {
+				display: inline-block;
+			}
+
+/* -- Footer -- */
+footer {
+	height:200px;
+	background-color: #fcfcfc;
+	@include outer-container;
+
+}
+
+

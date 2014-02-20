@@ -1,4 +1,9 @@
 {
   "title": "Discovery",
-  "maps_address": "1661, Rua Zacarias de Gois, 04610-001"
+  "company_logo": "Seu Logo Aqui",
+
+  "menu_home": "Home",
+  "menu_about": "Quem Somos",
+  "menu_gallery": "Galeria de Fotos",
+  "menu_contact": "Contato"
 }

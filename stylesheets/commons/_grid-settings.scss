@@ -1,0 +1,8 @@
+@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+
+$visual-grid: true;
+
+// Device specific breakpoints
+$tablet: new-breakpoint(max-width 1022px 10);
+$wide-mobile: new-breakpoint(max-width 480px 4);
+$mobile: new-breakpoint(max-width 320px 4);
